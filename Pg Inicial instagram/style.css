@@ -118,8 +118,9 @@ body{
 }
 
 .app-download{
-    width: 3rem;
-    height: 10rem;
+    height: 3rem;
+    width: 10rem;
+    border-radius: 5px;
     background-size: cover;
 }
 
