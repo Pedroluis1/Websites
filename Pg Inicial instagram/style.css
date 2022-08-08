@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;/* O preenchimento e a borda serão incluídos na largura e na altura. */
+    text-decoration: none;
+    font-family: sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex; /* Posicionado no centro (usando o display e o justify)*/
+    justify-content: center;
+}
+
+.instagram-wrapper{
+    display: flex; /* Alinhamento em linha ocupando todo o espaço que ele necessita dentro do conteiner (Sempre vai alinhar os itens em linha) */
+    align-items: center; /* (eixo y) Alinhamento na vertical */
+    justify-content: start;/* (eixo x) Alinhamento na horizontal */ /* Start: começar da esquerda -> Direita */
+    width: 60%;
+    height: 100vh;
+}
+
+.instagram-phone{
+    display: flex;
+    align-items: center;/*y*/
+    justify-content: center; /*x*/
+    width: 50%;
+}
+
+.instagram-phone img{
+    height: 43rem; /* */
+}
+
+.instagram-continue{
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Flex-direction: column girou, então o align-intems e o justify-content INVERTERAM*/ /*  justify ficou na horizontal (y) e o align na vertical(x)*/
+    flex-direction: column; /* inverteu o justify e o align*/
+    width: 50%;
+    min-height: 32rem;
+}
+
+.group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 1px solid lightgray;
+}
+
+.group:nth-child(1){ /* Seletor (Selecionando a primeira div(group) */
+    height: 19rem;
+
+}
+
+.instagram-logo{
+    min-height: 3rem;
+}
+
+.profile-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden; /* A imagem não execeder o tamanho da div pra fora (tudo de quadrado pra fora vai ficar escondido)*/
+}
+
+.profile-photo img {
+    height: 6rem;
+}
+
+.instagram-login{
+    background-color: #0095f6;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.instagram-logout{
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.not-account{
+    color: rgb(160,160,160);
+}
+
+.link-blue{
+    color: #0095f6;
+}
+
+.get-the-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download{
+    width: 100%;
+    justify-content: space-evenly; /* Mesmo espaços dos lados quanto no meio*/
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download{
+    width: 3rem;
+    height: 10rem;
+    background-size: cover;
+
+}
+
+.app-download:nth-child(1){
+    background-image: url(imagens/apple-button.png);
+}
+
+.app-download:nth-child(2){
+    background-image: url(imagens/googleplay-button.png);
+}
