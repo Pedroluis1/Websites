@@ -60,12 +60,12 @@ body{
 }
 
 .group:nth-child(1){ /* Seletor (Selecionando a primeira div(group) */
-    height: 19rem;
+    min-height: 19rem;
 
 }
 
 .instagram-logo{
-    min-height: 3rem;
+    height: 3rem;
 }
 
 .profile-photo{
@@ -121,13 +121,12 @@ body{
     width: 3rem;
     height: 10rem;
     background-size: cover;
-
 }
 
 .app-download:nth-child(1){
-    background-image: url('imagens/apple-button.png');
+    background-image: url('img/apple-button.png');
 }
 
 .app-download:nth-child(2){
-    background-image: url('imagens/googleplay-button.png');
+    background-image: url('img/googleplay-button.png');
 }
