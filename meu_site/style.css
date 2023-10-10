@@ -1,0 +1,141 @@
+@charset "utf-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&family=Satisfy&display=swap');
+
+
+@font-face {
+    font-family: 'nome2';
+    src: url('..folder_repository_vscode\GitHub\Websites\meu_site\font\Roboto') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'nome';
+    src: url('..folder_repository_vscode\GitHub\Websites\meu_site\font\Satisfy') format('opentype');
+    font-weight: normal;
+}
+
+
+:root{
+    --cor0: #0245F5;
+    --cor1: #037BFF;
+    --cor2: #09A2E8;
+    --cor3: #80f0ff;
+    --cor4: #02E9D1;
+
+    --fonte-nome: 'nome', 'Roboto', sans-serif,'Satisfy', 'cursive';
+    --fonte-nome: 'nome2','Roboto', sans-serif,'Satisfy', 'cursive';
+
+
+}
+*{
+    color: black;
+}
+
+body {
+    margin: 0; /* Remove margens padrão do body */
+    padding: 0; /* Remove preenchimento padrão do body */
+  }
+
+header {
+    background-color: var(--cor3);
+    width: 100%;
+    display: inline-block;
+    min-height: 110px;
+    position: fixed;
+    top: 0;
+    box-shadow:inset 0px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+header h1 {
+    display: inline-block;
+    font-family: 'Satisfy', cursive;
+    font-size: 2.7rem;
+    font-weight: bold;
+    padding: 10px 10px 0px 70px;
+    text-align: left;
+  }
+
+header p {
+    display: inline-block;
+    text-align: left;
+    font-size: 1.2rem;
+    margin: 0;
+
+}
+
+header nav {
+    text-align: right;
+    font-family: var(--fonte-nome);
+    margin: -50px 50px 10px 0px;
+}
+
+
+nav >a{
+    margin-left: 45px;
+    text-decoration: none;
+    font-weight: 800;
+    transition: font-size 0.3s;
+}
+
+nav > a:hover{
+    color: var(--cor0);
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+}
+
+#container {
+    background-color: #96f3ffea;
+    margin: left;
+    width: 40%;
+    height: 1000px;
+    box-shadow: inset 5px 5px 10px 3px rgba(0, 0, 0, 0.3);
+}
+
+#container2 {
+    background-color: gray;
+    margin: -750px 0px 0px 200px;
+    width: 370px;
+    height: 600px;
+    box-shadow: 5px -5px 20px 4px rgba(0, 0, 0, 0.3);
+}
+
+#container2 img {
+    width: 200px; /* Largura desejada da imagem */
+    height: 200px; /* Altura desejada da imagem */
+    border-radius: 50%; /* Torna a imagem redonda */
+    display: flexbox;
+    margin: 50px 85px 0px ;
+}
+
+#container2 h1 {
+    text-align: center;
+    line-height: 0.7;
+    font-family: var(--fonte-nome2);
+}
+
+.linha-horizontal {
+    border-top: 1px solid #000; /* Espessura e cor da linha */
+    width: 10%; /* Largura inicial da linha */
+    height: 1px; /* Altura da linha (1 pixel) */
+    transition: width 0.3s; /* Adiciona uma transição suave para a propriedade 'width' */
+    margin: auto;
+}
+
+.linha-horizontal:hover {
+    width: 20%; /* Quando o mouse passar sobre ela, aumenta a largura para 20% (esticando) */
+}
+
+#container2 h2 {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#container3 {
+    
+}
