@@ -71,8 +71,8 @@ header nav {
     text-align: right;
     font-family: var(--fonte-nome);
     margin: -50px 50px 10px 0px;
+    font-size: 1.2rem;
 }
-
 
 nav >a{
     margin-left: 45px;
@@ -84,7 +84,7 @@ nav >a{
 nav > a:hover{
     color: var(--cor0);
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    font-size: 18px;
+    font-size: 1.4rem;
 }
 
 #container {
@@ -99,7 +99,7 @@ nav > a:hover{
     background-color: gray;
     margin: -750px 0px 0px 200px;
     width: 370px;
-    height: 600px;
+    height: 530px;
     box-shadow: 5px -5px 20px 4px rgba(0, 0, 0, 0.3);
 }
 
@@ -132,10 +132,32 @@ nav > a:hover{
 #container2 h2 {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     text-align: center;
 }
 
 #container3 {
-    
+    background-color: #fff;
+    width: 370px;
+    height: 11%;
+    text-align: center;
+    margin-top: 70px;
 }
+
+#container3 >a{
+    margin-right: 10px;
+    margin-top: 50;
+}
+
+.texto{
+    font-family: 'Roboto';
+    text-align: left;
+    align-items: center;
+    padding-right: 90px;
+    margin: -504px 0px 0px 630px;    
+    font-weight: bold;
+    font-size: 1.3rem;
+
+}
+
+
