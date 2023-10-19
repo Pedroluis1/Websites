@@ -18,17 +18,16 @@
     font-weight: normal;
 }
 
-
 :root{
-    --cor0: #0245F5;
-    --cor1: #037BFF;
-    --cor2: #09A2E8;
+    --cor0: #E6DACE;
+    --cor1: #F4ECE6;
+    --cor2: #0050FF;
     --cor3: #80f0ff;
     --cor4: #02E9D1;
 
     --fonte-nome: 'nome', 'Roboto', sans-serif,'Satisfy', 'cursive';
     --fonte-nome: 'nome2','Roboto', sans-serif,'Satisfy', 'cursive';
-
+    /*--fonte-escura: 'escura', 'nome', 'Roboto', sans-serif,'Satisfy';*/
 
 }
 *{
@@ -41,15 +40,23 @@ body {
   }
 
 header {
-    background-color: var(--cor3);
+    background-color: #fff;
     width: 100%;
     display: inline-block;
     min-height: 110px;
     position: fixed;
     top: 0;
-    box-shadow:inset 0px 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow:inset 0px 19px 21px 0px rgba(0, 0, 0, 0.1);
   }
   
+  /*.quadradinho-azul {
+    background-color: var(--cor2);
+    width: 10px; 
+    height: 10px;
+    display: inline-block;
+    margin: 0px 0px 5px 65px;
+}*/
+
 header h1 {
     display: inline-block;
     font-family: 'Satisfy', cursive;
@@ -82,25 +89,25 @@ nav >a{
 }
 
 nav > a:hover{
-    color: var(--cor0);
+    color: var(--cor2);
     text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     font-size: 1.4rem;
 }
 
 #container {
-    background-color: #96f3ffea;
+    background-color: var(--cor0);
     margin: left;
     width: 40%;
     height: 1000px;
-    box-shadow: inset 5px 5px 10px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 8px 0px 14px 0px rgba(0, 0, 0, 0.11);
 }
 
 #container2 {
-    background-color: gray;
-    margin: -750px 0px 0px 200px;
+    background-color: var(--cor1);
+    margin: -760px 0px 0px 200px;
     width: 370px;
     height: 530px;
-    box-shadow: 5px -5px 20px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: -8px 8px 20px 0px rgba(0, 0, 0, 0.11);
 }
 
 #container2 img {
@@ -119,10 +126,11 @@ nav > a:hover{
 
 .linha-horizontal {
     border-top: 1px solid #000; /* Espessura e cor da linha */
-    width: 10%; /* Largura inicial da linha */
-    height: 1px; /* Altura da linha (1 pixel) */
+    width: 12%; /* Largura inicial da linha */
+    height: 2px; /* Altura da linha (1 pixel) */
     transition: width 0.3s; /* Adiciona uma transição suave para a propriedade 'width' */
     margin: auto;
+    background-color: #2369ff;
 }
 
 .linha-horizontal:hover {
@@ -157,7 +165,47 @@ nav > a:hover{
     margin: -504px 0px 0px 630px;    
     font-weight: bold;
     font-size: 1.3rem;
+}
 
+.texto >h1{
+    font-weight: 900;
 }
 
 
+
+.texto >a{
+    display: inline-block;
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: 2px solid #000;
+    border-radius: 25px; /* Cantos arredondados */
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    margin:0px 20px 17px 0px;
+    width: 85px;
+    height: 15px;
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: var(--fonte-nome2);
+}
+
+.texto a.azul {/*Currículo*/
+    background-color: var(--cor2);
+    color: #fff;
+    border-color: var(--fonte-nome);
+}
+
+.texto a.branco {/*Projetos*/
+    background-color: #fff;
+}
+
+.texto a.azul:hover {/*Currículo*/
+    background-color: #fff;
+    color: #000;
+}
+
+.texto a.branco:hover {/*Projetos*/
+    background: var(--cor2);
+    color: #fff;
+    border-color: var(--cor2);
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botões Retangulares</title>
+    <style>
+        /* Estilos para os botões */
+        .botao {
+            display: inline-block;
+            padding: 10px 20px; /* Espaçamento interno do botão */
+            border: 2px solid #000;
+            border-radius: 10px; /* Cantos arredondados */
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        /* Estilo para o botão branco */
+        .botao-branco {
+            background-color: #fff;
+        }
+
+        /* Estilo para o botão azul */
+        .botao-azul {
+            background-color: #00f;
+            color: #fff;
+        }
+
+        /* Quando passar o mouse no botão branco, muda a cor para azul */
+        .botao-branco:hover {
+            background-color: #00f;
+            border-color: #00f;
+        }
+
+        /* Quando passar o mouse no botão azul, muda a cor para branco */
+        .botao-azul:hover {
+            background-color: #fff;
+            color: #00f;
+        }
+    </style>
+</head>
+<body>
+    <div class="botao botao-branco">Botão Branco</div>
+    <div class="botao botao-azul">Botão Azul</div>
+</body>
+</html>
