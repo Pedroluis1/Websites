@@ -39,6 +39,7 @@ body {
     padding: 0; /* Remove preenchimento padrão do body */
   }
 
+
 header {
     background-color: #fff;
     width: 100%;
@@ -47,6 +48,9 @@ header {
     position: fixed;
     top: 0;
     box-shadow:inset 0px 19px 21px 0px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    z-index: 2;
+
   }
   
   /*.quadradinho-azul {
@@ -94,6 +98,10 @@ nav > a:hover{
     font-size: 1.4rem;
 }
 
+#sobre_mim{
+    color: var(--cor2);
+}
+
 #container {
     background-color: var(--cor0);
     margin: left;
@@ -104,10 +112,14 @@ nav > a:hover{
 
 #container2 {
     background-color: var(--cor1);
-    margin: -760px 0px 0px 200px;
+    /*margin: -760px 0px 0px 200px;*/
+    margin: 0;
     width: 370px;
     height: 530px;
     box-shadow: -8px 8px 20px 0px rgba(0, 0, 0, 0.11);
+    position: absolute; /* Use position: absolute para controlar a posição exata */
+    top: 210px; /* Ajuste a posição vertical conforme necessário */
+    left: 193px; /* Ajuste a posição horizontal conforme necessário */
 }
 
 #container2 img {
@@ -150,19 +162,46 @@ nav > a:hover{
     height: 11%;
     text-align: center;
     margin-top: 70px;
+    display: flex; /* Isso alinha os elementos horizontalmente */
+    justify-content: space-between; /* Isso distribui os elementos igualmente */
+    position: relative; /* Isso permite controlar a posição dos elementos filhos */
+    z-index: 1; /* Defina um valor maior do que o z-index do cabeçalho para garantir que fiquem na frente */
+    position: relative;
+    z-index: 1;
+
 }
 
-#container3 >a{
-    margin-right: 10px;
-    margin-top: 50;
+
+#container3 .links {
+    display: flex; /* Isso alinha os links horizontalmente */
+    justify-content: space-between; /* Isso distribui os links igualmente */
 }
+
+#container3 a {
+    display: inline-block; /* Isso torna os links elementos em bloco com tamanho definido */
+    width: 25px; /* Defina a largura desejada para os links */
+    height: 25px; /* Defina a altura desejada para os links */
+    margin: -33px 60px 0px -74px;
+    padding: 0px 62px 0px 21px;
+    position: relative;
+}
+
+#container3 img {
+    max-width: 25px;
+    max-height: 25px;
+}
+
 
 .texto{
     font-family: 'Roboto';
     text-align: left;
     align-items: center;
     padding-right: 90px;
-    margin: -504px 0px 0px 630px;    
+    /*margin: -504px 0px 0px 630px;*/    
+    margin: 0;
+    position: absolute; /* Use position: absolute para controlar a posição exata */
+    top: 225px; /* Ajuste a posição vertical conforme necessário */
+    left: 598px; /* Ajuste a posição horizontal conforme necessário */
     font-weight: bold;
     font-size: 1.3rem;
 }
@@ -208,4 +247,13 @@ nav > a:hover{
     background: var(--cor2);
     color: #fff;
     border-color: var(--cor2);
+}
+
+footer {
+    margin-top: -60px;
+    position: absolute;
+    width: 100%;
+    background-color: #333; /* Cor de fundo do footer */
+    text-align: center; /* Centraliza o conteúdo do footer */
+    padding: 10px; /* Espaçamento interno do footer */
 }
