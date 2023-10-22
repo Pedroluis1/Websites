@@ -1,10 +1,8 @@
 @charset "utf-8";
 
-
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&family=Satisfy&display=swap');
-
 
 @font-face {
     font-family: 'nome2';
@@ -39,7 +37,6 @@ body {
     padding: 0; /* Remove preenchimento padrão do body */
   }
 
-
 header {
     background-color: #fff;
     width: 100%;
@@ -50,7 +47,6 @@ header {
     box-shadow:inset 0px 19px 21px 0px rgba(0, 0, 0, 0.1);
     position: fixed;
     z-index: 2;
-
   }
   
   /*.quadradinho-azul {
@@ -75,7 +71,6 @@ header p {
     text-align: left;
     font-size: 1.2rem;
     margin: 0;
-
 }
 
 header nav {
@@ -112,7 +107,6 @@ nav > a:hover{
 
 #container2 {
     background-color: var(--cor1);
-    /*margin: -760px 0px 0px 200px;*/
     width: 370px;
     height: 530px;
     box-shadow: -8px 8px 20px 0px rgba(0, 0, 0, 0.11);
@@ -167,9 +161,7 @@ nav > a:hover{
     z-index: 1; /* Defina um valor maior do que o z-index do cabeçalho para garantir que fiquem na frente */
     position: relative;
     z-index: 1;
-
 }
-
 
 #container3 .links {
     display: flex; /* Isso alinha os links horizontalmente */
@@ -190,13 +182,11 @@ nav > a:hover{
     max-height: 25px;
 }
 
-
-.texto{
+.texto {
     font-family: 'Roboto';
     text-align: left;
     align-items: center;
     padding-right: 90px;
-    /*margin: -504px 0px 0px 630px;*/    
     margin: 0;
     position: absolute; /* Use position: absolute para controlar a posição exata */
     top: 225px; /* Ajuste a posição vertical conforme necessário */
@@ -205,13 +195,11 @@ nav > a:hover{
     font-size: 1.3rem;
 }
 
-.texto >h1{
+.texto > h1 {
     font-weight: 900;
 }
 
-
-
-.texto >a{
+.texto > a {
     display: inline-block;
     padding: 10px 20px; /* Espaçamento interno do botão */
     border: 2px solid #000;
@@ -219,7 +207,7 @@ nav > a:hover{
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s, border-color 0.3s;
-    margin:0px 20px 17px 0px;
+    margin: 0px 20px 17px 0px;
     width: 85px;
     height: 15px;
     font-size: 1rem;
@@ -251,7 +239,7 @@ nav > a:hover{
 footer {
     background-color: #333; /* Cor de fundo do footer */
     text-align: center; /* Centraliza o conteúdo do footer */
-    position: absolute;    
+    position: absolute;
     margin-top: -100px;
     width: 100%;
     padding: 10px; /* Espaçamento interno do footer */
