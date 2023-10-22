@@ -113,7 +113,6 @@ nav > a:hover{
 #container2 {
     background-color: var(--cor1);
     /*margin: -760px 0px 0px 200px;*/
-    margin: 0;
     width: 370px;
     height: 530px;
     box-shadow: -8px 8px 20px 0px rgba(0, 0, 0, 0.11);
@@ -250,10 +249,15 @@ nav > a:hover{
 }
 
 footer {
-    margin-top: -60px;
-    position: absolute;
-    width: 100%;
     background-color: #333; /* Cor de fundo do footer */
     text-align: center; /* Centraliza o conteúdo do footer */
+    position: absolute;    
+    margin-top: -100px;
+    width: 100%;
     padding: 10px; /* Espaçamento interno do footer */
+    height: 100px;
+}
+
+footer ul {
+    list-style-type: none;
 }
