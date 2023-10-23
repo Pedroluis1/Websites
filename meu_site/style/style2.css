@@ -131,6 +131,24 @@ main .azul a.azul:hover {/*Currículo*/
     color: #000;
 }
 
+.incluindo{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.linha-vertical {
+    border-left: 3px solid #2369ff; /* Espessura e cor da linha */
+    width: 2px; /* Largura inicial da linha */
+    height: 90px; /* Altura inicial da linha */
+    transition: height 0.5s; /* Ajuste a duração da transição para torná-la mais visível */
+    margin: auto;
+}
+
+.linha-vertical:hover {
+    height: 40%; /* Quando o mouse passar sobre ela, aumenta a altura para 100% (esticando verticalmente) */
+}
+
 
 #container1{
     background-color: #fff;
@@ -140,14 +158,24 @@ main .azul a.azul:hover {/*Currículo*/
     padding: 0px 0px 0px 0px;
 }
 
-#container1 .coluna .lado1 h2 {
-    color: var(--cor2);
+#container1 .lado1 h2 {
+    color: #0050FF;
 }
 
+.coluna {
+    display: flex;
+    justify-content: flex-end;
+}
 
+.lado1{
+    margin: 0px 0px 0px 0px;
+    width: 140px;
+}
 
-
-
+.lado2{
+    margin: 40px 0px 0px 30px;
+    width: 500px;
+}
 
 
 

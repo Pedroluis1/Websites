@@ -136,12 +136,11 @@ nav > a:hover{
 }
 
 .linha-horizontal {
-    border-top: 1px solid #000; /* Espessura e cor da linha */
+    border-top: 1px solid #2369ff; /* Espessura e cor da linha */
     width: 12%; /* Largura inicial da linha */
     height: 2px; /* Altura da linha (1 pixel) */
     transition: width 0.3s; /* Adiciona uma transição suave para a propriedade 'width' */
     margin: auto;
-    background-color: #2369ff;
 }
 
 .linha-horizontal:hover {
