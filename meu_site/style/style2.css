@@ -150,12 +150,6 @@ main .azul a.azul:hover {/*Currículo*/
     height: 32%; /* Quando o mouse passar sobre ela, aumenta a altura para 100% (esticando verticalmente) */
 }
 
-.incluindo2{
-    display: flex;
-    height: 100%;
-    width: 100%;
-}
-
 .linha-vertical2 {
     border-left: 2px solid #2369ff; /* Espessura e cor da linha */
     width: 2px; /* Largura inicial da linha */
