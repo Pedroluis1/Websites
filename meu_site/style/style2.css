@@ -133,29 +133,35 @@ main .azul a.azul:hover {/*Currículo*/
 
 .incluindo{
     display: flex;
+    height: 100%;
+    width: 100%;
     align-items: center;
+}
+
+.linha-vertical {
+    border-left: 2px solid #2369ff; /* Espessura e cor da linha */
+    width: 2px; /* Largura inicial da linha */
+    height: 80px; /* Altura inicial da linha */
+    transition: height 0.5s; /* Ajuste a duração da transição para torná-la mais visível */
+    margin: 0px 0px 100px 30px;
+}
+
+.linha-vertical:hover {
+    height: 32%; /* Quando o mouse passar sobre ela, aumenta a altura para 100% (esticando verticalmente) */
+}
+
+.incluindo2{
+    display: flex;
     height: 100%;
     width: 100%;
 }
 
-.linha-vertical {
-    border-left: 3px solid #2369ff; /* Espessura e cor da linha */
-    width: 2px; /* Largura inicial da linha */
-    height: 90px; /* Altura inicial da linha */
-    transition: height 0.5s; /* Ajuste a duração da transição para torná-la mais visível */
-    margin: auto;
-}
-
-.linha-vertical:hover {
-    height: 40%; /* Quando o mouse passar sobre ela, aumenta a altura para 100% (esticando verticalmente) */
-}
-
 .linha-vertical2 {
-    border-left: 3px solid #2369ff; /* Espessura e cor da linha */
+    border-left: 2px solid #2369ff; /* Espessura e cor da linha */
     width: 2px; /* Largura inicial da linha */
-    height: 90px; /* Altura inicial da linha */
+    height: 115px; /* Altura inicial da linha */
     transition: height 0.5s; /* Ajuste a duração da transição para torná-la mais visível */
-    margin: auto;
+    margin: 85px -38px 43px 20px;
 }
 
 .linha-vertical2:hover {
@@ -164,9 +170,9 @@ main .azul a.azul:hover {/*Currículo*/
 
 #container1{
     background-color: #fff;
-    margin: auto;
     width: 56.5%;
     height: 337px;
+    margin: 0px auto 200px auto;
     padding: 0px 0px 0px 0px;
 }
 
@@ -174,9 +180,10 @@ main .azul a.azul:hover {/*Currículo*/
     color: #0050FF;
 }
 
-.coluna {
+.coluna1 {
     display: flex;
     justify-content: flex-end;
+    margin: 0px 0px 100px 15px;
 }
 
 .lado1{
@@ -189,7 +196,9 @@ main .azul a.azul:hover {/*Currículo*/
     width: 500px;
 }
 
-
+.lado2 ul li{
+    margin-bottom: 5px;
+}
 
 
 
