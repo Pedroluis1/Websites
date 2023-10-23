@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&family=Satisfy&display=swap');
+
+
+@font-face {
+    font-family: 'nome2';
+    src: url('..folder_repository_vscode\GitHub\Websites\meu_site\font\Roboto') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'nome';
+    src: url('..folder_repository_vscode\GitHub\Websites\meu_site\font\Satisfy') format('opentype');
+    font-weight: normal;
+}
+
+:root{
+    --cor0: #E6DACE;
+    --cor1: #F4ECE6;
+    --cor2: #0050FF;
+    --cor3: #80f0ff;
+    --cor4: #02E9D1;
+
+    --fonte-nome: 'nome', 'Roboto', sans-serif,'Satisfy', 'cursive';
+    --fonte-nome: 'nome2','Roboto', sans-serif,'Satisfy', 'cursive';
+    /*--fonte-escura: 'escura', 'nome', 'Roboto', sans-serif,'Satisfy';*/
+
+}
+*{
+    color: black;
+}
+
+body {
+    margin: 0; /* Remove margens padrão do body */
+    padding: 0; /* Remove preenchimento padrão do body */
+    background-color: var(--cor0);
+  }
+
+
+header {
+    background-color: #fff;
+    width: 100%;
+    display: inline-block;
+    min-height: 110px;
+    position: fixed;
+    top: 0;
+    box-shadow:inset 0px 19px 21px 0px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    z-index: 2;
+
+  }
+  
+  /*.quadradinho-azul {
+    background-color: var(--cor2);
+    width: 10px; 
+    height: 10px;
+    display: inline-block;
+    margin: 0px 0px 5px 65px;
+}*/
+
+header h1 {
+    display: inline-block;
+    font-family: 'Satisfy', cursive;
+    font-size: 2.7rem;
+    font-weight: normal;
+    padding: 10px 10px 0px 70px;
+    text-align: left;
+  }
+
+header p {
+    display: inline-block;
+    text-align: left;
+    font-size: 1.2rem;
+    margin: 0;
+
+}
+
+header nav {
+    text-align: right;
+    font-family: var(--fonte-nome);
+    margin: -50px 50px 10px 0px;
+    font-size: 1.2rem;
+}
+
+nav >a{
+    margin-left: 45px;
+    text-decoration: none;
+    font-weight: 800;
+    transition: font-size 0.3s;
+}
+
+nav > a:hover{
+    color: var(--cor2);
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1.4rem;
+}
+
+#currículo{
+    color: var(--cor2);
+}
+
+
+main .azul >a{
+    display: inline-block;
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: 2px solid #000;
+    border-radius: 25px; /* Cantos arredondados */
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    margin:0px 20px 17px 0px;
+    width: 85px;
+    height: 15px;
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: var(--fonte-nome2);
+}
+
+main .azul a{/*Currículo*/
+    background-color: var(--cor2);
+    color: #fff;
+    border-color: var(--fonte-nome);
+}
+
+main .azul a.azul:hover {/*Currículo*/
+    background-color: #fff;
+    color: #000;
+}
+
+
+#container1{
+    background-color: #fff;
+    margin: auto;
+    width: 56.5%;
+    height: 337px;
+    padding: 0px 0px 0px 0px;
+}
+
+#container1 .coluna .lado1 h2 {
+    color: var(--cor2);
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #fff; /* Cor de fundo do footer */
+    text-align: center; /* Centraliza o conteúdo do footer */
+    position: absolute;    
+    margin-top: -100px;
+    width: 100%;
+    padding: 10px; /* Espaçamento interno do footer */
+    height: 100px;
+}
+
+footer ul {
+    list-style-type: none;
+    margin-right: 20PX;
+}
+
+footer .coluna{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+}
