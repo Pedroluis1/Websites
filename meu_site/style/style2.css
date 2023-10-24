@@ -141,13 +141,13 @@ main .azul a.azul:hover {/*Currículo*/
 .linha-vertical {
     border-left: 2px solid #2369ff; /* Espessura e cor da linha */
     width: 2px; /* Largura inicial da linha */
-    height: 80px; /* Altura inicial da linha */
+    height: 100px; /* Altura inicial da linha */
     transition: height 0.5s; /* Ajuste a duração da transição para torná-la mais visível */
     margin: 0px 0px 100px 30px;
 }
 
 .linha-vertical:hover {
-    height: 32%; /* Quando o mouse passar sobre ela, aumenta a altura para 100% (esticando verticalmente) */
+    height: 40%; /* Quando o mouse passar sobre ela, aumenta a altura para 100% (esticando verticalmente) */
 }
 
 .linha-vertical2 {
@@ -170,8 +170,32 @@ main .azul a.azul:hover {/*Currículo*/
     padding: 0px 0px 0px 0px;
 }
 
-#container1 .lado1 h2 {
+/*#container1 .lado1 h2 {
     color: #0050FF;
+}*/
+
+#container1 .lado1 p {
+    margin-top: -10px;
+    font-size: 1rem;
+}
+
+.coluna1 .lado1 .espaço {
+    margin-top: 23px; /* Ajuste o valor conforme necessário para obter o espaçamento desejado */
+}
+
+.coluna1 .lado1 a{
+    text-decoration: none;
+    color: var(--cor2);
+    transition: color  0.3s;
+
+}
+
+.coluna1 .lado1 .espaço :hover{
+    color: var(--cor2);
+}
+
+.coluna1 .lado1 abbr{
+    text-decoration: none;
 }
 
 .coluna1 {
@@ -195,6 +219,9 @@ main .azul a.azul:hover {/*Currículo*/
     margin-left: -38px;
 }
 
+.destacado {
+    color: #0050FF;
+}
 
 
 footer {
