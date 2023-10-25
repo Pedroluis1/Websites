@@ -141,6 +141,7 @@ nav > a:hover{
     height: 2px; /* Altura da linha (1 pixel) */
     transition: width 0.3s; /* Adiciona uma transição suave para a propriedade 'width' */
     margin: auto;
+    background-color: #2369ff;
 }
 
 .linha-horizontal:hover {

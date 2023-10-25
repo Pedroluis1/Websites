@@ -131,6 +131,60 @@ main .azul a.azul:hover {/*Currículo*/
     color: #000;
 }
 
+.cima {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 54%;
+    margin: 120px auto -12px auto;
+}
+
+h2#curriculop {
+    order: 2; /* Colocar 'Experiência' como o segundo na ordem */
+    padding-bottom: 60px;
+    font-size: 1.7rem;
+}
+
+.azul {
+    order: 3; /* Colocar o link 'CURRÍCULO' como o terceiro na ordem */
+    margin-top: 47px;
+    background-color: var(--cor2);
+    color: #fff;
+
+
+    display: inline-block;
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: 2px solid #000;
+    border-radius: 25px; /* Cantos arredondados */
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    height: 15px;
+    font-size: 1rem;
+    text-decoration: none;
+    font-family: var(--fonte-nome2);
+}
+
+.azul a:hover {/*Currículo*/
+    background-color: #fff;
+    color: #000;
+}
+
+#experiencia {
+    margin-top: 90px;
+    font-size: 1.4rem;
+}
+
+#educacao{
+    font-size: 1.4rem;
+    margin-top: -40px;
+    margin-bottom: 4px;
+}
+
+
+
+
+
 .incluindo{
     display: flex;
     height: 100%;
@@ -162,19 +216,18 @@ main .azul a.azul:hover {/*Currículo*/
     height: 44%; /* Quando o mouse passar sobre ela, aumenta a altura para 100% (esticando verticalmente) */
 }
 
-#container1{
+.container1{
     background-color: #fff;
     width: 56.5%;
     height: 337px;
-    margin: 0px auto 200px auto;
-    padding: 0px 0px 0px 0px;
+    margin: 0px auto 105px auto;
 }
 
-/*#container1 .lado1 h2 {
+/*.container1 .lado1 h2 {
     color: #0050FF;
 }*/
 
-#container1 .lado1 p {
+.container1 .lado1 p {
     margin-top: -10px;
     font-size: 1rem;
 }
@@ -196,6 +249,12 @@ main .azul a.azul:hover {/*Currículo*/
 
 .coluna1 .lado1 abbr{
     text-decoration: none;
+}
+
+#obs {
+    text-align: end;
+    margin-right: 7px;
+    margin-top: -25px;
 }
 
 .coluna1 {
