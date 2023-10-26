@@ -63,9 +63,9 @@ header {
 
 header h1 {
     display: inline-block;
-    font-family: 'Satisfy', cursive;
+    font-family: 'Roboto', cursive;
     font-size: 2.7rem;
-    font-weight: normal;
+    font-weight: bold;
     padding: 10px 10px 0px 70px;
     text-align: left;
   }
@@ -132,12 +132,15 @@ nav > a:hover{
 #container2 h1 {
     text-align: center;
     line-height: 0.7;
-    font-family: var(--fonte-nome2);
+    font-family: 'Roboto';
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 10px;
 }
 
 .linha-horizontal {
     border-top: 1px solid #2369ff; /* Espessura e cor da linha */
-    width: 12%; /* Largura inicial da linha */
+    width: 22%; /* Largura inicial da linha */
     height: 2px; /* Altura da linha (1 pixel) */
     transition: width 0.3s; /* Adiciona uma transição suave para a propriedade 'width' */
     margin: auto;
@@ -145,7 +148,7 @@ nav > a:hover{
 }
 
 .linha-horizontal:hover {
-    width: 20%; /* Quando o mouse passar sobre ela, aumenta a largura para 20% (esticando) */
+    width: 34%; /* Quando o mouse passar sobre ela, aumenta a largura para 20% (esticando) */
 }
 
 #container2 h2 {
@@ -250,21 +253,31 @@ nav > a:hover{
 
 footer {
     background-color: #fff; /* Cor de fundo do footer */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
     text-align: center; /* Centraliza o conteúdo do footer */
     position: absolute;    
     margin-top: -100px;
-    width: 100%;
+    width: 96%;
     padding: 10px; /* Espaçamento interno do footer */
     height: 100px;
+    display: flex;
+    justify-content: space-between;
 }
 
-footer ul {
+footer .coluna1 p{
+    margin: 80px 0px 0px 12px;
+    font-size: 0.8rem;
+}
+
+footer ul li{
     list-style-type: none;
-    margin-right: 20PX;
+    margin: 14px 0px -5px 0px;
 }
 
-footer .coluna{
+
+footer .coluna2{
     display: flex;
     justify-content: flex-end;
-    margin-right: 100px;
+    margin-right: 45px;
 }

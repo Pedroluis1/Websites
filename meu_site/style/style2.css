@@ -335,6 +335,7 @@ color: var(--cor2);
 #cont3{
     display: block;
     justify-content: space-between;
+    margin-bottom: 150px;
 }
 
 .linha1, .linha2{
@@ -371,23 +372,34 @@ color: var(--cor2);
 
 
 
+
 footer {
     background-color: #fff; /* Cor de fundo do footer */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
     text-align: center; /* Centraliza o conteúdo do footer */
     position: absolute;    
     margin-top: -100px;
-    width: 100%;
+    width: 98.48%;
     padding: 10px; /* Espaçamento interno do footer */
     height: 100px;
+    display: flex;
+    justify-content: space-between;
 }
 
-footer ul {
+footer .coluna1 p{
+    margin: 80px 0px 0px 12px;
+    font-size: 0.8rem;
+}
+
+footer ul li{
     list-style-type: none;
-    margin-right: 20PX;
+    margin: 14px 0px -5px 0px;
 }
 
-footer .coluna{
+
+footer .coluna2{
     display: flex;
     justify-content: flex-end;
-    margin-right: 100px;
+    margin-right: 45px;
 }
