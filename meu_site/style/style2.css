@@ -139,7 +139,7 @@ main .azul a.azul:hover {/*Currículo*/
     margin: 120px auto -12px auto;
 }
 
-h2#curriculop {
+h2 #curriculop {
     order: 2; /* Colocar 'Experiência' como o segundo na ordem */
     padding-bottom: 60px;
     font-size: 1.7rem;
@@ -236,6 +236,7 @@ h2#curriculop {
     width: 56.5%;
     height: 337px;
     margin: 0px auto 105px auto;
+    box-shadow: 0px 19px 21px 0px rgba(0, 0, 0, 0.1);
 }
 
 #cont2 .lado1 {
