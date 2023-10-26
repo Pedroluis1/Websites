@@ -332,6 +332,19 @@ color: var(--cor2);
     color: #0050FF;
 }
 
+.linha1{
+    background-color: aqua;
+    width: 50%;
+    display: block;
+}
+
+.linha2{
+    background-color: blueviolet;
+    width: 50%;
+
+}
+
+
 
 footer {
     background-color: #fff; /* Cor de fundo do footer */
