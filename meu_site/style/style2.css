@@ -242,9 +242,18 @@ h2#curriculop {
     width: 400px;
 }
 
+#cont2 .incluindo .lado2 ul li a{
+    text-decoration: none;
+    transition: color  0.5s;
+}
+
+#cont2 .incluindo .lado2 ul li a:hover{
+color: var(--cor2);
+}
+
 #cont2 .linha-vertical2 {
     width: 2px; /* Largura inicial da linha */
-    margin: 85px 0px 43px 20px;
+    margin: 85px 0px 43px 10px;
 }
 
 /*.container1 .lado1 h2 {
@@ -268,9 +277,10 @@ h2#curriculop {
 
 .coluna1 .lado1 a{
     text-decoration: none;
-    color: var(--cor2);
-    transition: color  0.3s;
+}
 
+.coluna1 .lado1 a abbr{
+    transition: color  0.3s;
 }
 
 .coluna1 .lado1 .espaço :hover{
