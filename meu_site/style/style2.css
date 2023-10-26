@@ -197,7 +197,7 @@ h2#curriculop {
     width: 2px; /* Largura inicial da linha */
     height: 100px; /* Altura inicial da linha */
     transition: height 0.5s; /* Ajuste a duração da transição para torná-la mais visível */
-    margin: 0px 0px 100px 30px;
+    margin: 0px 0px 95px 30px;
 }
 
 .linha-vertical:hover {
@@ -221,7 +221,7 @@ h2#curriculop {
     width: 2px; /* Largura inicial da linha */
     height: 100px; /* Altura inicial da linha */
     transition: height 0.5s; /* Ajuste a duração da transição para torná-la mais visível */
-    margin: 0px 0px 70px 30px;
+    margin: 0px 0px 95px 30px;
 }
 
 #cont2 .linha-vertical:hover {
@@ -242,18 +242,24 @@ h2#curriculop {
     width: 400px;
 }
 
-#cont2 .incluindo .lado2 ul li a{
+#cont2 .incluindo .lado2 a{
     text-decoration: none;
     transition: color  0.5s;
 }
 
-#cont2 .incluindo .lado2 ul li a:hover{
+#cont2 .incluindo .lado2 a:hover{
 color: var(--cor2);
 }
 
 #cont2 .linha-vertical2 {
     width: 2px; /* Largura inicial da linha */
     margin: 85px 0px 43px 10px;
+    height: 155px;
+}
+
+#cont2 .linha-vertical2:hover{
+    height: 65%; /* Quando o mouse passar sobre ela, aumenta a altura para 100% (esticando verticalmente) */
+
 }
 
 /*.container1 .lado1 h2 {
@@ -309,7 +315,6 @@ color: var(--cor2);
 }
 
 .lado1{
-    margin: 34px 0px 0px 0px;
     width: 140px;
 }
 
