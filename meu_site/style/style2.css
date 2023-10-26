@@ -332,17 +332,42 @@ color: var(--cor2);
     color: #0050FF;
 }
 
-.linha1{
-    background-color: aqua;
-    width: 50%;
+#cont3{
     display: block;
+    justify-content: space-between;
 }
 
-.linha2{
-    background-color: blueviolet;
-    width: 50%;
-
+.linha1, .linha2{
+    margin-left: 35px;
 }
+
+.linha1 h2, .linha2 h2{
+    margin: -15px 0px 0px 0px;
+    padding: 25px 0px 0px 0px;
+}
+
+.linha1 ul, .linha2 ul{
+    list-style-type: square;
+    font-size: 1.1rem;
+}
+
+.listas ul li{
+    margin: 0px 10px 20px -13px;
+}
+
+.listas .ul2 li{
+    margin-right: 27px;
+}
+
+.listas{
+    display: flex;
+}
+
+
+
+
+
+
 
 
 
