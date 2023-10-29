@@ -1,0 +1,14 @@
+
+
+body{
+    background-color: #E6DACE;
+}
+
+main img{
+    margin: auto;
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 20px;
+    display: block;
+    box-shadow: -10px 6px 18px 0px rgba(0, 0, 0, 0.1);
+}
