@@ -38,6 +38,7 @@ body {
     margin: 0; /* Remove margens padrão do body */
     padding: 0; /* Remove preenchimento padrão do body */
     background-color: var(--cor0);
+    overflow-x: hidden;
   }
 
 
@@ -141,7 +142,7 @@ main .azul a.azul:hover {/*Currículo*/
 
 h2 #curriculop {
     order: 2; /* Colocar 'Experiência' como o segundo na ordem */
-    padding-bottom: 60px;
+    margin-top: 90px;
     font-size: 1.7rem;
 }
 
@@ -171,7 +172,7 @@ h2 #curriculop {
 }
 
 #experiencia {
-    margin-top: 90px;
+    margin-bottom: -60px;
     font-size: 1.4rem;
 }
 
@@ -381,7 +382,7 @@ footer {
     text-align: center; /* Centraliza o conteúdo do footer */
     position: absolute;    
     margin-top: -100px;
-    width: 98.48%;
+    width: 100%;
     padding: 10px; /* Espaçamento interno do footer */
     height: 100px;
     display: flex;
@@ -402,5 +403,20 @@ footer ul li{
 footer .coluna2{
     display: flex;
     justify-content: flex-end;
-    margin-right: 45px;
+    margin-right: 30px;
+}
+
+footer #links2{
+    display: flex; /* Isso alinha os links horizontalmente */
+    width: auto;
+    height: auto;
+    margin: 0px 15px 0px 0px;
+}
+
+
+#links2 a{
+    display: flex; /* Isso alinha os links horizontalmente */
+    height: 25px; /* Defina a altura desejada para os links */
+    padding: 0px 0px 0px 12px;
+    margin: 7px 5px 0px 0px;
 }
