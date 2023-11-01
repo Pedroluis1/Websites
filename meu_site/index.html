@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tamanho da Tela</title>
+</head>
+<body>
+    <h1>Tamanho da Tela</h1>
+    <p>Largura da tela: <span id="largura-tela"></span> pixels</p>
+    <p>Altura da tela: <span id="altura-tela"></span> pixels</p>
+
+    <script>
+        // Função para exibir o tamanho da tela
+        function mostrarTamanhoDaTela() {
+            var larguraTela = window.innerWidth;
+            var alturaTela = window.innerHeight;
+
+            document.getElementById("largura-tela").textContent = larguraTela;
+            document.getElementById("altura-tela").textContent = alturaTela;
+        }
+
+        // Chame a função para exibir o tamanho da tela quando a página for carregada
+        mostrarTamanhoDaTela();
+
+        // Atualize o tamanho da tela quando a janela for redimensionada
+        window.addEventListener("resize", mostrarTamanhoDaTela);
+    </script>
+</body>
+</html>
