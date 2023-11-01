@@ -140,15 +140,15 @@ main .azul a.azul:hover {/*Currículo*/
     margin: 120px auto -12px auto;
 }
 
-h2 #curriculop {
+#curriculop {
     order: 2; /* Colocar 'Experiência' como o segundo na ordem */
-    margin-top: 90px;
+    margin-bottom: 110px;
     font-size: 1.7rem;
 }
 
 .azul {
     order: 3; /* Colocar o link 'CURRÍCULO' como o terceiro na ordem */
-    margin-top: 47px;
+    margin-top: 40px;
     background-color: var(--cor2);
     color: #fff;
 
@@ -172,7 +172,7 @@ h2 #curriculop {
 }
 
 #experiencia {
-    margin-bottom: -60px;
+    margin-bottom: -43px;
     font-size: 1.4rem;
 }
 
@@ -236,7 +236,7 @@ h2 #curriculop {
     background-color: #fff;
     width: 56.5%;
     height: 337px;
-    margin: 0px auto 105px auto;
+    margin: -30px auto 105px auto;
     box-shadow: 0px 19px 21px 0px rgba(0, 0, 0, 0.1);
 }
 

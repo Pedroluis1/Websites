@@ -34,266 +34,549 @@
     color: black;
 }
 
-body {
-    margin: 0; /* Remove margens padrão do body */
-    padding: 0; /* Remove preenchimento padrão do body */
-    overflow-x: hidden;
-  }
+/* Telas Grandes (Desktops) topo do css */
+@media screen and (min-width: 1025px) {
+    /* Estilos para telas maiores que 1024px */
+
+    body {
+        margin: 0; /* Remove margens padrão do body */
+        padding: 0; /* Remove preenchimento padrão do body */
+        overflow-x: hidden;
+    }
 
 
-header {
-    background-color: #fff;
-    width: 100%;
-    display: inline-block;
-    min-height: 110px;
-    position: fixed;
-    top: 0;
-    box-shadow:inset 0px 19px 21px 0px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    z-index: 2;
+    header {
+        background-color: #fff;
+        width: 100%;
+        display: inline-block;
+        min-height: 110px;
+        position: fixed;
+        top: 0;
+        box-shadow:inset 0px 19px 21px 0px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        z-index: 2;
 
-  }
-  
-  /*.quadradinho-azul {
-    background-color: var(--cor2);
-    width: 10px; 
-    height: 10px;
-    display: inline-block;
-    margin: 0px 0px 5px 65px;
-}*/
+    }
+    
+    /*.quadradinho-azul {
+        background-color: var(--cor2);
+        width: 10px; 
+        height: 10px;
+        display: inline-block;
+        margin: 0px 0px 5px 65px;
+    }*/
 
-header h1 {
-    display: inline-block;
-    font-family: 'Roboto', cursive;
-    font-size: 2.7rem;
-    font-weight: bold;
-    padding: 10px 10px 0px 70px;
-    text-align: left;
-  }
+    header h1 {
+        display: inline-block;
+        font-family: 'Roboto', cursive;
+        font-size: 2.7rem;
+        font-weight: bold;
+        padding: 10px 10px 0px 70px;
+        text-align: left;
+    }
 
-header p {
-    display: inline-block;
-    text-align: left;
-    font-size: 1.2rem;
-    margin: 0;
+    header p {
+        display: inline-block;
+        text-align: left;
+        font-size: 1.2rem;
+        margin: 0;
 
+    }
+
+    header nav {
+        text-align: right;
+        font-family: var(--fonte-nome);
+        margin: -50px 50px 10px 0px;
+        font-size: 1.2rem;
+    }
+
+    nav >a{
+        margin-left: 45px;
+        text-decoration: none;
+        font-weight: 800;
+        transition: font-size 0.3s;
+    }
+
+    nav > a:hover{
+        color: var(--cor2);
+        text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        font-size: 1.4rem;
+    }
+
+    #sobre_mim{
+        color: var(--cor2);
+    }
+
+    #container {
+        background-color: var(--cor0);
+        margin: left;
+        width: 40%;
+        height: 1000px;
+        box-shadow: inset 8px 0px 14px 0px rgba(0, 0, 0, 0.11);
+    }
+
+    #container2 {
+        background-color: var(--cor1);
+        /*margin: -760px 0px 0px 200px;*/
+        width: 370px;
+        height: 530px;
+        box-shadow: -8px 8px 20px 0px rgba(0, 0, 0, 0.11);
+        position: absolute; /* Use position: absolute para controlar a posição exata */
+        top: 210px; /* Ajuste a posição vertical conforme necessário */
+        left: 193px; /* Ajuste a posição horizontal conforme necessário */
+    }
+
+    #container2 img {
+        width: 200px; /* Largura desejada da imagem */
+        height: 200px; /* Altura desejada da imagem */
+        border-radius: 50%; /* Torna a imagem redonda */
+        display: flexbox;
+        margin: 50px 85px 0px 0px;
+    }
+
+    #container2 h1 {
+        text-align: center;
+        line-height: 0.7;
+        font-family: 'Roboto';
+        font-weight: bold;
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+
+    .linha-horizontal {
+        border-top: 1px solid #2369ff; /* Espessura e cor da linha */
+        width: 22%; /* Largura inicial da linha */
+        height: 2px; /* Altura da linha (1 pixel) */
+        transition: width 0.3s; /* Adiciona uma transição suave para a propriedade 'width' */
+        margin: auto;
+        background-color: #2369ff;
+    }
+
+    .linha-horizontal:hover {
+        width: 34%; /* Quando o mouse passar sobre ela, aumenta a largura para 20% (esticando) */
+    }
+
+    #container2 h2 {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    #container3 {
+        background-color: #fff;
+        width: 370px;
+        height: 11%;
+        text-align: center;
+        margin-top: 70px;
+        display: flex; /* Isso alinha os elementos horizontalmente */
+        justify-content: space-between; /* Isso distribui os elementos igualmente */
+        position: relative; /* Isso permite controlar a posição dos elementos filhos */
+        z-index: 1; /* Defina um valor maior do que o z-index do cabeçalho para garantir que fiquem na frente */
+        position: relative;
+        z-index: 1;
+
+    }
+
+
+    #container3 .links {
+        display: flex; /* Isso alinha os links horizontalmente */
+        justify-content: space-between; /* Isso distribui os links igualmente */
+    }
+
+    #container3 a {
+        display: inline-block; /* Isso torna os links elementos em bloco com tamanho definido */
+        width: 25px; /* Defina a largura desejada para os links */
+        height: 25px; /* Defina a altura desejada para os links */
+        margin: -33px 60px 0px -74px;
+        padding: 0px 62px 0px 21px;
+        position: relative;
+    }
+
+    #container3 img {
+        max-width: 25px;
+        max-height: 25px;
+    }
+
+
+    .texto{
+        font-family: 'Roboto';
+        text-align: left;
+        align-items: center;
+        padding-right: 90px;
+        /*margin: -504px 0px 0px 630px;*/    
+        margin: 0;
+        position: absolute; /* Use position: absolute para controlar a posição exata */
+        top: 225px; /* Ajuste a posição vertical conforme necessário */
+        left: 598px; /* Ajuste a posição horizontal conforme necessário */
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+
+    .texto >h1{
+        font-weight: 900;
+    }
+
+
+
+    .texto >a{
+        display: inline-block;
+        padding: 10px 20px; /* Espaçamento interno do botão */
+        border: 2px solid #000;
+        border-radius: 25px; /* Cantos arredondados */
+        text-align: center;
+        cursor: pointer;
+        transition: background-color 0.3s, border-color 0.3s;
+        margin:0px 20px 17px 0px;
+        width: 85px;
+        height: 15px;
+        font-size: 1rem;
+        text-decoration: none;
+        font-family: var(--fonte-nome2);
+    }
+
+    .texto a.azul {/*Currículo*/
+        background-color: var(--cor2);
+        color: #fff;
+        border-color: var(--fonte-nome);
+    }
+
+    .texto a.branco {/*Projetos*/
+        background-color: #fff;
+    }
+
+    .texto a.azul:hover {/*Currículo*/
+        background-color: #fff;
+        color: #000;
+    }
+
+    .texto a.branco:hover {/*Projetos*/
+        background: var(--cor2);
+        color: #fff;
+        border-color: var(--cor2);
+    }
+
+    footer {
+        background-color: #fff; /* Cor de fundo do footer */
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        text-align: center; /* Centraliza o conteúdo do footer */
+        position: absolute;    
+        margin-top: -100px;
+        width: 100%;
+        padding: 10px; /* Espaçamento interno do footer */
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer .coluna1 p{
+        margin: 80px 0px 0px 12px;
+        font-size: 0.8rem;
+    }
+
+    footer ul li{
+        list-style-type: none;
+        margin: 14px 0px -5px 0px;
+    }
+
+
+    footer .coluna2{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 30px;
+    }
+
+    footer #links2{
+        display: flex; /* Isso alinha os links horizontalmente */
+        width: auto;
+        height: auto;
+        margin: 0px 15px 0px 0px;
+    }
+
+
+    #links2 a{
+        display: flex; /* Isso alinha os links horizontalmente */
+        height: 25px; /* Defina a altura desejada para os links */
+        padding: 0px 0px 0px 12px;
+        margin: 7px 5px 0px 0px;
+    }
 }
 
-header nav {
-    text-align: right;
-    font-family: var(--fonte-nome);
-    margin: -50px 50px 10px 0px;
-    font-size: 1.2rem;
+/* Telas Pequenas (Smartphones) */
+@media screen and (max-width: 767px) {
+    /* Estilos para telas menores que 600px */
+
+    body {
+        margin: 0; /* Remove margens padrão do body */
+        padding: 0; /* Remove preenchimento padrão do body */
+        overflow-x: hidden;
+    }
+
+
+    header {
+        background-color: #fff;
+        width: 100%;
+        display: inline-block;
+        min-height: 110px;
+        position: fixed;
+        top: 0;
+        box-shadow:inset 0px 19px 21px 0px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        z-index: 2;
+
+    }
+    
+    /*.quadradinho-azul {
+        background-color: var(--cor2);
+        width: 10px; 
+        height: 10px;
+        display: inline-block;
+        margin: 0px 0px 5px 65px;
+    }*/
+
+    header h1 {
+        display: inline-block;
+        font-family: 'Roboto', cursive;
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 10px 10px 0px 70px;
+        text-align: left;
+    }
+
+    header p {
+        display: inline-block;
+        text-align: left;
+        font-size: 1.2rem;
+        margin: 0;
+
+    }
+
+    header nav {
+        display: block;
+        text-align: left;
+        font-family: var(--fonte-nome);
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        font-size: 1.2rem;
+    }
+
+    nav >a{
+        display: inline-block;
+        margin: 0px 0px 0px 15px;
+        text-decoration: none;
+        font-weight: 800;
+        transition: font-size 0.3s;
+    }
+
+    nav > a:hover{
+        color: var(--cor2);
+        text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        font-size: 1.4rem;
+    }
+
+    #sobre_mim{
+        color: var(--cor2);
+    }
+
+    #container {
+        background-color: var(--cor0);
+        margin: left;
+        width: 40%;
+        height: 1000px;
+        box-shadow: inset 8px 0px 14px 0px rgba(0, 0, 0, 0.11);
+    }
+
+    #container2 {
+        background-color: var(--cor1);
+        /*margin: -760px 0px 0px 200px;*/
+        width: 370px;
+        height: 530px;
+        box-shadow: -8px 8px 20px 0px rgba(0, 0, 0, 0.11);
+        position: absolute; /* Use position: absolute para controlar a posição exata */
+        top: 210px; /* Ajuste a posição vertical conforme necessário */
+        left: 193px; /* Ajuste a posição horizontal conforme necessário */
+    }
+
+    #container2 img {
+        width: 200px; /* Largura desejada da imagem */
+        height: 200px; /* Altura desejada da imagem */
+        border-radius: 50%; /* Torna a imagem redonda */
+        display: flexbox;
+        margin: 50px 85px 0px 0px;
+    }
+
+    #container2 h1 {
+        text-align: center;
+        line-height: 0.7;
+        font-family: 'Roboto';
+        font-weight: bold;
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+
+    .linha-horizontal {
+        border-top: 1px solid #2369ff; /* Espessura e cor da linha */
+        width: 22%; /* Largura inicial da linha */
+        height: 2px; /* Altura da linha (1 pixel) */
+        transition: width 0.3s; /* Adiciona uma transição suave para a propriedade 'width' */
+        margin: auto;
+        background-color: #2369ff;
+    }
+
+    .linha-horizontal:hover {
+        width: 34%; /* Quando o mouse passar sobre ela, aumenta a largura para 20% (esticando) */
+    }
+
+    #container2 h2 {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    #container3 {
+        background-color: #fff;
+        width: 370px;
+        height: 11%;
+        text-align: center;
+        margin-top: 70px;
+        display: flex; /* Isso alinha os elementos horizontalmente */
+        justify-content: space-between; /* Isso distribui os elementos igualmente */
+        position: relative; /* Isso permite controlar a posição dos elementos filhos */
+        z-index: 1; /* Defina um valor maior do que o z-index do cabeçalho para garantir que fiquem na frente */
+        position: relative;
+        z-index: 1;
+
+    }
+
+
+    #container3 .links {
+        display: flex; /* Isso alinha os links horizontalmente */
+        justify-content: space-between; /* Isso distribui os links igualmente */
+    }
+
+    #container3 a {
+        display: inline-block; /* Isso torna os links elementos em bloco com tamanho definido */
+        width: 25px; /* Defina a largura desejada para os links */
+        height: 25px; /* Defina a altura desejada para os links */
+        margin: -33px 60px 0px -74px;
+        padding: 0px 62px 0px 21px;
+        position: relative;
+    }
+
+    #container3 img {
+        max-width: 25px;
+        max-height: 25px;
+    }
+
+
+    .texto{
+        font-family: 'Roboto';
+        text-align: left;
+        align-items: center;
+        padding-right: 90px;
+        /*margin: -504px 0px 0px 630px;*/    
+        margin: 0;
+        position: absolute; /* Use position: absolute para controlar a posição exata */
+        top: 225px; /* Ajuste a posição vertical conforme necessário */
+        left: 598px; /* Ajuste a posição horizontal conforme necessário */
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+
+    .texto >h1{
+        font-weight: 900;
+    }
+
+
+
+    .texto >a{
+        display: inline-block;
+        padding: 10px 20px; /* Espaçamento interno do botão */
+        border: 2px solid #000;
+        border-radius: 25px; /* Cantos arredondados */
+        text-align: center;
+        cursor: pointer;
+        transition: background-color 0.3s, border-color 0.3s;
+        margin:0px 20px 17px 0px;
+        width: 85px;
+        height: 15px;
+        font-size: 1rem;
+        text-decoration: none;
+        font-family: var(--fonte-nome2);
+    }
+
+    .texto a.azul {/*Currículo*/
+        background-color: var(--cor2);
+        color: #fff;
+        border-color: var(--fonte-nome);
+    }
+
+    .texto a.branco {/*Projetos*/
+        background-color: #fff;
+    }
+
+    .texto a.azul:hover {/*Currículo*/
+        background-color: #fff;
+        color: #000;
+    }
+
+    .texto a.branco:hover {/*Projetos*/
+        background: var(--cor2);
+        color: #fff;
+        border-color: var(--cor2);
+    }
+
+    footer {
+        background-color: #fff; /* Cor de fundo do footer */
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1rem;
+        text-align: center; /* Centraliza o conteúdo do footer */
+        position: absolute;    
+        margin-top: -100px;
+        width: 100%;
+        padding: 10px; /* Espaçamento interno do footer */
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer .coluna1 p{
+        margin: 80px 0px 0px 12px;
+        font-size: 0.8rem;
+    }
+
+    footer ul li{
+        list-style-type: none;
+        margin: 14px 0px -5px 0px;
+    }
+
+
+    footer .coluna2{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 30px;
+    }
+
+    footer #links2{
+        display: flex; /* Isso alinha os links horizontalmente */
+        width: auto;
+        height: auto;
+        margin: 0px 15px 0px 0px;
+    }
+
+
+    #links2 a{
+        display: flex; /* Isso alinha os links horizontalmente */
+        height: 25px; /* Defina a altura desejada para os links */
+        padding: 0px 0px 0px 12px;
+        margin: 7px 5px 0px 0px;
+    }
 }
 
-nav >a{
-    margin-left: 45px;
-    text-decoration: none;
-    font-weight: 800;
-    transition: font-size 0.3s;
+/* Telas Médias (Tablets) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Estilos para telas entre 601px e 1024px */
 }
 
-nav > a:hover{
-    color: var(--cor2);
-    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    font-size: 1.4rem;
-}
-
-#sobre_mim{
-    color: var(--cor2);
-}
-
-#container {
-    background-color: var(--cor0);
-    margin: left;
-    width: 40%;
-    height: 1000px;
-    box-shadow: inset 8px 0px 14px 0px rgba(0, 0, 0, 0.11);
-}
-
-#container2 {
-    background-color: var(--cor1);
-    /*margin: -760px 0px 0px 200px;*/
-    width: 370px;
-    height: 530px;
-    box-shadow: -8px 8px 20px 0px rgba(0, 0, 0, 0.11);
-    position: absolute; /* Use position: absolute para controlar a posição exata */
-    top: 210px; /* Ajuste a posição vertical conforme necessário */
-    left: 193px; /* Ajuste a posição horizontal conforme necessário */
-}
-
-#container2 img {
-    width: 200px; /* Largura desejada da imagem */
-    height: 200px; /* Altura desejada da imagem */
-    border-radius: 50%; /* Torna a imagem redonda */
-    display: flexbox;
-    margin: 50px 85px 0px ;
-}
-
-#container2 h1 {
-    text-align: center;
-    line-height: 0.7;
-    font-family: 'Roboto';
-    font-weight: bold;
-    line-height: 1.2;
-    margin-bottom: 10px;
-}
-
-.linha-horizontal {
-    border-top: 1px solid #2369ff; /* Espessura e cor da linha */
-    width: 22%; /* Largura inicial da linha */
-    height: 2px; /* Altura da linha (1 pixel) */
-    transition: width 0.3s; /* Adiciona uma transição suave para a propriedade 'width' */
-    margin: auto;
-    background-color: #2369ff;
-}
-
-.linha-horizontal:hover {
-    width: 34%; /* Quando o mouse passar sobre ela, aumenta a largura para 20% (esticando) */
-}
-
-#container2 h2 {
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-size: 1.8rem;
-    text-align: center;
-}
-
-#container3 {
-    background-color: #fff;
-    width: 370px;
-    height: 11%;
-    text-align: center;
-    margin-top: 70px;
-    display: flex; /* Isso alinha os elementos horizontalmente */
-    justify-content: space-between; /* Isso distribui os elementos igualmente */
-    position: relative; /* Isso permite controlar a posição dos elementos filhos */
-    z-index: 1; /* Defina um valor maior do que o z-index do cabeçalho para garantir que fiquem na frente */
-    position: relative;
-    z-index: 1;
-
-}
-
-
-#container3 .links {
-    display: flex; /* Isso alinha os links horizontalmente */
-    justify-content: space-between; /* Isso distribui os links igualmente */
-}
-
-#container3 a {
-    display: inline-block; /* Isso torna os links elementos em bloco com tamanho definido */
-    width: 25px; /* Defina a largura desejada para os links */
-    height: 25px; /* Defina a altura desejada para os links */
-    margin: -33px 60px 0px -74px;
-    padding: 0px 62px 0px 21px;
-    position: relative;
-}
-
-#container3 img {
-    max-width: 25px;
-    max-height: 25px;
-}
-
-
-.texto{
-    font-family: 'Roboto';
-    text-align: left;
-    align-items: center;
-    padding-right: 90px;
-    /*margin: -504px 0px 0px 630px;*/    
-    margin: 0;
-    position: absolute; /* Use position: absolute para controlar a posição exata */
-    top: 225px; /* Ajuste a posição vertical conforme necessário */
-    left: 598px; /* Ajuste a posição horizontal conforme necessário */
-    font-weight: bold;
-    font-size: 1.3rem;
-}
-
-.texto >h1{
-    font-weight: 900;
-}
-
-
-
-.texto >a{
-    display: inline-block;
-    padding: 10px 20px; /* Espaçamento interno do botão */
-    border: 2px solid #000;
-    border-radius: 25px; /* Cantos arredondados */
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s, border-color 0.3s;
-    margin:0px 20px 17px 0px;
-    width: 85px;
-    height: 15px;
-    font-size: 1rem;
-    text-decoration: none;
-    font-family: var(--fonte-nome2);
-}
-
-.texto a.azul {/*Currículo*/
-    background-color: var(--cor2);
-    color: #fff;
-    border-color: var(--fonte-nome);
-}
-
-.texto a.branco {/*Projetos*/
-    background-color: #fff;
-}
-
-.texto a.azul:hover {/*Currículo*/
-    background-color: #fff;
-    color: #000;
-}
-
-.texto a.branco:hover {/*Projetos*/
-    background: var(--cor2);
-    color: #fff;
-    border-color: var(--cor2);
-}
-
-footer {
-    background-color: #fff; /* Cor de fundo do footer */
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    text-align: center; /* Centraliza o conteúdo do footer */
-    position: absolute;    
-    margin-top: -100px;
-    width: 100%;
-    padding: 10px; /* Espaçamento interno do footer */
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-}
-
-footer .coluna1 p{
-    margin: 80px 0px 0px 12px;
-    font-size: 0.8rem;
-}
-
-footer ul li{
-    list-style-type: none;
-    margin: 14px 0px -5px 0px;
-}
-
-
-footer .coluna2{
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 30px;
-}
-
-footer #links2{
-    display: flex; /* Isso alinha os links horizontalmente */
-    width: auto;
-    height: auto;
-    margin: 0px 15px 0px 0px;
-}
-
-
-#links2 a{
-    display: flex; /* Isso alinha os links horizontalmente */
-    height: 25px; /* Defina a altura desejada para os links */
-    padding: 0px 0px 0px 12px;
-    margin: 7px 5px 0px 0px;
-}
