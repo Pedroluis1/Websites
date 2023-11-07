@@ -249,9 +249,6 @@ main .azul a.azul:hover {
     /* Quando o mouse passar sobre ela, aumenta a altura para 100% (esticando verticalmente) */
 }
 
-
-
-
 .container1 {
     background-color: #fff;
     width: 56.5%;
@@ -264,12 +261,22 @@ main .azul a.azul:hover {
     width: 400px;
 }
 
-#cont2 .incluindo .lado2 a {
+#cont2 .lado2 h2 a{
+    color: #0050FF;
+    text-decoration: underline;
+    transition: color 0.5s;
+}
+
+#cont2 .lado2 h2 a:hover{
+    color: #000;
+}
+
+#cont2 .incluindo .lado2 ul a {
     text-decoration: none;
     transition: color 0.5s;
 }
 
-#cont2 .incluindo .lado2 a:hover {
+#cont2 .incluindo .lado2 ul a:hover {
     color: var(--cor2);
 }
 
