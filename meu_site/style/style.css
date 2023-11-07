@@ -305,7 +305,7 @@
 
 /* Telas Pequenas (Smartphones) */
 @media screen and (max-width: 767px) {
-    /* Estilos para telas menores que 600px */
+    /* Estilos para telas menores que 767px */
 
     body {
         margin: 0; /* Remove margens padrão do body */
