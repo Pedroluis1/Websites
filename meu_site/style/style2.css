@@ -250,7 +250,7 @@ main .azul a.azul:hover {/*Currículo*/
 }
 
 #cont2 .incluindo .lado2 a:hover{
-color: var(--cor2);
+    color: var(--cor2);
 }
 
 #cont2 .linha-vertical2 {
