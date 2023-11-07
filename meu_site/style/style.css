@@ -131,7 +131,7 @@
         height: 200px; /* Altura desejada da imagem */
         border-radius: 50%; /* Torna a imagem redonda */
         display: flexbox;
-        margin: 50px 85px 0px 0px;
+        margin: 50px 24% 0px 24%;
     }
 
     #container2 h1 {
@@ -188,8 +188,8 @@
         display: inline-block; /* Isso torna os links elementos em bloco com tamanho definido */
         width: 25px; /* Defina a largura desejada para os links */
         height: 25px; /* Defina a altura desejada para os links */
-        margin: -33px 60px 0px -74px;
-        padding: 0px 62px 0px 21px;
+        margin: -33px -8px 0px 0px;
+        padding: 0px 0px 0px 57px;
         position: relative;
     }
 
