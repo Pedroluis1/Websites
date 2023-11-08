@@ -1083,7 +1083,7 @@
     .container1 {
         background-color: #fff;
         width: 71.5%;
-        height: 600px;
+        min-height: 600px;
         margin: -30px auto 105px auto;
         box-shadow: 0px 19px 21px 0px rgba(0, 0, 0, 0.1);
     }
@@ -1259,7 +1259,6 @@
         margin: -10px -9px 14px -2px;
         }
 
-
     footer .coluna2 {
         display: flex;
         justify-content: flex-end;
@@ -1272,7 +1271,6 @@
         width: auto;
         height: auto;
     }
-
 
     #links2 a {
     display: flex;
