@@ -1255,7 +1255,7 @@
     }
 
     footer ul{
-        margin-right: 10px;
+        margin-right: -20px;
     }
 
     footer ul li {
@@ -1265,7 +1265,6 @@
 
     footer .coluna2 {
         display: flex;
-        justify-content: flex-end;
     }
 
     footer #links2 {
