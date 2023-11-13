@@ -1175,7 +1175,7 @@
 
     .coluna1 {
         display: inline-block;
-        margin: 0px 0px 50px 8px;
+        margin: 0px 0px 0px 8px;
     }
 
     .lado1 {
@@ -1184,7 +1184,7 @@
 
     .lado2 {
         display: inline-block;
-        margin: 0px 0px 0px 50px;
+        margin: -260px 0px 0px 50px;
         width: 300px;
     }
 
