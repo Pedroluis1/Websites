@@ -969,7 +969,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 70%;
+        width: 85%;
         margin: 120px auto -12px auto;
     }
 
@@ -1017,7 +1017,7 @@
         font-size: 1.4rem;
         margin-top: -70px;
         margin-bottom: 34px;
-        margin-left: 16%;
+        margin-left: 11%;
     }
 
     .incluindo {
@@ -1045,7 +1045,7 @@
     }
 
     .linha-vertical2 {
-        display: inline-block;
+        display: flex;
         border-left: 2px solid #2369ff;
         /* Espessura e cor da linha */
         width: 2px;
@@ -1200,9 +1200,8 @@
 
     #cont3 {
         display: block;
-        justify-content: space-between;
         margin-bottom: 20px;
-        height: 445px;
+        height: 200px;
     }
 
     .linha1,
