@@ -1040,7 +1040,7 @@
     }
 
     .linha-vertical:hover {
-        height: 20%;
+        height: 60%;
         /* Quando o mouse passar sobre ela, aumenta a altura para 100% (esticando verticalmente) */
     }
 
@@ -1050,11 +1050,11 @@
         /* Espessura e cor da linha */
         width: 2px;
         /* Largura inicial da linha */
-        height: 115px;
+        height: 191px;
         /* Altura inicial da linha */
         transition: height 0.5s;
         /* Ajuste a duração da transição para torná-la mais visível */
-        margin: 85px 0px 43px 20px;
+        margin: 49px 0px 12px 22px;
     }
 
     .linha-vertical2:hover {
@@ -1068,11 +1068,11 @@
         /* Espessura e cor da linha */
         width: 2px;
         /* Largura inicial da linha */
-        height: 100px;
+        height: 121px;
         /* Altura inicial da linha */
         transition: height 0.5s;
         /* Ajuste a duração da transição para torná-la mais visível */
-        margin: 0px 0px 95px 30px;
+        margin: 0px 0px 26px 22px;
     }
 
     #cont2 .linha-vertical:hover {
@@ -1083,7 +1083,7 @@
     .container1 {
         background-color: #fff;
         width: 88.5%;
-        min-height: 600px;
+        min-height: 465px;
         margin: -30px auto 105px auto;
         box-shadow: 0px 19px 21px 0px rgba(0, 0, 0, 0.1);
     }
@@ -1115,7 +1115,7 @@
     #cont2 .linha-vertical2 {
         width: 2px;
         /* Largura inicial da linha */
-        margin: 85px 0px 43px 10px;
+        margin: 50px 0px 20px 22px;
         height: 155px;
     }
 
