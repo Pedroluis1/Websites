@@ -395,7 +395,7 @@
         box-shadow: -8px 8px 20px 0px rgba(0, 0, 0, 0.11);
         position: absolute; /* Use position: absolute para controlar a posição exata */
         top: 160px; /* Ajuste a posição vertical conforme necessário */
-        left: 35px; /* Ajuste a posição horizontal conforme necessário */
+        left: 20px; /* Ajuste a posição horizontal conforme necessário */
     }
 
     #container2 img {
@@ -437,7 +437,7 @@
 
     #container3 {
         background-color: #fff;
-        width: 370px;
+        width: 211px;
         height: 11%;
         text-align: center;
         margin-top: 70px;
@@ -478,10 +478,10 @@
         /*margin: -504px 0px 0px 630px;*/    
         margin: 0;
         position: absolute; /* Use position: absolute para controlar a posição exata */
-        top: 225px; /* Ajuste a posição vertical conforme necessário */
-        left: 598px; /* Ajuste a posição horizontal conforme necessário */
+        top: 190px;
+        left: 234px;
         font-weight: bold;
-        font-size: 1.3rem;
+        font-size: 0.99rem;
     }
 
     .texto >h1{
@@ -527,50 +527,66 @@
         border-color: var(--cor2);
     }
 
+    #paragrafo{
+        width: 172px;
+        height: 150px;
+        background-color: #02E9D1;
+        margin: 0px 0px 0px 0px;
+    }
+
     footer {
-        background-color: #fff; /* Cor de fundo do footer */
+        background-color: #fff;
+        /* Cor de fundo do footer */
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 1rem;
-        text-align: center; /* Centraliza o conteúdo do footer */
-        position: absolute;    
-        margin-top: -100px;
-        width: 100%;
-        padding: 10px; /* Espaçamento interno do footer */
-        height: 100px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    footer .coluna1 p{
-        margin: 80px 0px 0px 12px;
         font-size: 0.8rem;
-    }
-
-    footer ul li{
-        list-style-type: none;
-        margin: 14px 0px -5px 0px;
-    }
-
-
-    footer .coluna2{
+        text-align: center;
+        /* Centraliza o conteúdo do footer */
+        position: absolute;
+        width: 95%;
+        padding: 10px;
+        /* Espaçamento interno do footer */
+        height: 70px;
         display: flex;
-        justify-content: flex-end;
-        margin-right: 30px;
     }
 
-    footer #links2{
-        display: flex; /* Isso alinha os links horizontalmente */
+    footer .coluna1 p {
+        margin: 0px 0px 0px 0px;
+        font-size: 0.6rem;
+    }
+
+    footer ul{
+        margin-right: -20px;
+    }
+
+    footer ul li {
+        list-style-type: none;
+        margin: -10px -9px 14px -2px;
+        }
+
+    footer .coluna2 {
+        display: flex;
+    }
+
+    footer #links2 {
+        display: flex;
+        /* Isso alinha os links horizontalmente */
         width: auto;
         height: auto;
-        margin: 0px 15px 0px 0px;
     }
 
+    #links2 a {
+    display: flex;
+    height: 18px;
+    padding: 0px 0px 0px 10px;
+    margin: -5px 10px 0px 0px;
+    }
 
-    #links2 a{
-        display: flex; /* Isso alinha os links horizontalmente */
-        height: 25px; /* Defina a altura desejada para os links */
-        padding: 0px 0px 0px 12px;
-        margin: 7px 5px 0px 0px;
+    #separado{
+        display: block;
+    }
+
+    #elemento-para-ocultar {
+        display: none;
     }
 }
 
