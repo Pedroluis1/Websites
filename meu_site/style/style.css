@@ -307,6 +307,12 @@
 @media screen and (max-width: 767px) {
     /* Estilos para telas menores que 767px */
 
+    body {
+        margin: 0; /* Remove margens padrão do body */
+        padding: 0; /* Remove preenchimento padrão do body */
+        overflow-x: hidden;
+    }
+
     header {
         background-color: #fff;
         width: 100%;
@@ -332,7 +338,7 @@
         font-family: 'Roboto', 'Satisfy', cursive;
         font-size: 2rem;
         font-weight: bold;
-        padding: 10px 10px 0px 70px;
+        padding: 10px 10px 0px 50px;
         text-align: left;
     }
 
@@ -355,7 +361,7 @@
 
     nav >a{
         display: inline-block;
-        margin: 0px 0px 0px 15px;
+        margin: 0px 0px 0px 10px;
         text-decoration: none;
         font-weight: 800;
         transition: font-size 0.3s;
@@ -374,20 +380,20 @@
     #container {
         background-color: var(--cor0);
         margin: left;
-        width: 40%;
-        height: 1000px;
+        max-width: 140px;
+        height: 835px;
         box-shadow: inset 8px 0px 14px 0px rgba(0, 0, 0, 0.11);
     }
 
     #container2 {
         background-color: var(--cor1);
         /*margin: -760px 0px 0px 200px;*/
-        width: 50%;
+        width: 168px;
         height: 354px;
         box-shadow: -8px 8px 20px 0px rgba(0, 0, 0, 0.11);
         position: absolute; /* Use position: absolute para controlar a posição exata */
         top: 160px; /* Ajuste a posição vertical conforme necessário */
-        left: 20px; /* Ajuste a posição horizontal conforme necessário */
+        left: 10px; /* Ajuste a posição horizontal conforme necessário */
     }
 
     #container2 img {
@@ -395,7 +401,7 @@
         height: 20px; /* Altura desejada da imagem */
         border-radius: 50%; /* Torna a imagem redonda */
         display: flexbox;
-        margin: 50px 85px 0px 0px;
+        margin: 50px 0px 0px 0px;
     }
 
     #container2 h1 {
@@ -428,18 +434,10 @@
     }
 
     #container3 {
-        background-color: #fff;
-        width: 211px;
-        height: 11%;
-        text-align: center;
+        background-color: #ffffff;
+        width: 100%;
+        height: 13%;
         margin-top: 70px;
-        display: flex; /* Isso alinha os elementos horizontalmente */
-        justify-content: space-between; /* Isso distribui os elementos igualmente */
-        position: relative; /* Isso permite controlar a posição dos elementos filhos */
-        z-index: 1; /* Defina um valor maior do que o z-index do cabeçalho para garantir que fiquem na frente */
-        position: relative;
-        z-index: 1;
-
     }
 
 
@@ -452,7 +450,7 @@
         display: inline-block; /* Isso torna os links elementos em bloco com tamanho definido */
         width: 25px; /* Defina a largura desejada para os links */
         height: 25px; /* Defina a altura desejada para os links */
-        margin: -33px 10px 0px 16px;
+        margin: -33px 3px 0px 16px;
         position: relative;
     }
 
@@ -464,16 +462,12 @@
 
     .texto{
         font-family: 'Roboto';
-        text-align: left;
-        align-items: center;
-        padding-right: 90px;
-        /*margin: -504px 0px 0px 630px;*/    
-        margin: 0;
         position: absolute; /* Use position: absolute para controlar a posição exata */
-        top: 190px;
-        left: 234px;
+        top: 165px;
+        left: 184px;
         font-weight: bold;
-        font-size: 0.99rem;
+        font-size: 1rem;
+        max-width: 220px;
     }
 
     .texto >h1{
@@ -520,9 +514,6 @@
     }
 
     #paragrafo{
-        width: 172px;
-        height: 150px;
-        background-color: #02E9D1;
         margin: 0px 0px 0px 0px;
     }
 
@@ -552,7 +543,7 @@
 
     footer ul li {
         list-style-type: none;
-        margin: -10px -9px 14px -2px;
+        margin: -10px -9px 14px -23px;
         }
 
     footer .coluna2 {
