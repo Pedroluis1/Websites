@@ -307,13 +307,6 @@
 @media screen and (max-width: 767px) {
     /* Estilos para telas menores que 767px */
 
-    body {
-        margin: 0; /* Remove margens padrão do body */
-        padding: 0; /* Remove preenchimento padrão do body */
-        overflow-x: hidden;
-    }
-
-
     header {
         background-color: #fff;
         width: 100%;
@@ -321,10 +314,9 @@
         min-height: 110px;
         position: fixed;
         top: 0;
-        box-shadow:inset 0px 19px 21px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: inset 0px 19px 21px 0px rgba(0, 0, 0, 0.1);
         position: fixed;
         z-index: 2;
-
     }
     
     /*.quadradinho-azul {
