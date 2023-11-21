@@ -84,7 +84,7 @@
     }
 
     header nav {
-        text-align: right;
+        text-align: center;
         font-family: var(--fonte-nome);
         margin: -50px 50px 10px 0px;
         font-size: 1.2rem;
@@ -352,7 +352,7 @@
 
     header nav {
         display: block;
-        text-align: left;
+        text-align: center;
         font-family: var(--fonte-nome);
         margin: 0px 0px 0px 0px;
         padding: 0px 0px 0px 0px;

@@ -911,10 +911,12 @@
     }
 
     header nav {
-        text-align: right;
+        display: block;
+        text-align: center;
         font-family: var(--fonte-nome);
-        margin: -48px 50px 10px 0px;
-        font-size: 1rem;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        font-size: 1.2rem;
     }
 
     nav>a {
