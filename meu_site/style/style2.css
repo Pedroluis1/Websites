@@ -1228,7 +1228,7 @@
     }
 
     .listas ul li {
-        margin: 0px 10px 20px -13px;
+        margin: 0px 10px 20px -18px;
     }
 
     .listas .ul2 li {
@@ -1292,5 +1292,13 @@
 
     #elemento-para-ocultar {
         display: none;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .lado2 {
+        display: inline-block;
+        margin: -260px 0px 0px 50px;
+        width: 270px;
     }
 }
