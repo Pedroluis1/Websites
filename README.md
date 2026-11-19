@@ -5,5 +5,6 @@
 
 <a href="https://pedroluis1.github.io/Websites/Pg-Inicial-instagram/index.html" target="_blank" rel="external">Página inicial instagram</a>
 
+<a href="https://pedroluis1.github.io/Websites/Catálogo_de_jogos_Kinect.html" target="_blank" rel="external">Catálogo de jogos Kinect</a>
 
 
