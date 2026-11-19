@@ -7,4 +7,4 @@
 
 <a href="https://pedroluis1.github.io/Websites/Catálogo_de_jogos_Kinect.html" target="_blank" rel="external">Catálogo de jogos Kinect</a>
 
-
+<a href="https://pedroluis1.github.io/Websites/Venha_se_divertir_Jogos_Kinect.html" target="_blank" rel="external">Catálogo de jogos Kinect 2</a>
